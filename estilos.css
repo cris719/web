@@ -1,0 +1,441 @@
+/*damos el tamaño de nuetro sitio*/
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+
+    /*aqui esta los estilos del cuerpo de la pagina*/
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /*aqui van los diseños de la barra de navegacion*/
+    nav{
+        background-color: #111;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        box-shadow: 0 4px 6px rgba(0,0,0,o.4);
+    }
+    .logo{
+        display: flex;
+        align-items: center
+        gap: 10px;
+    }
+
+    /*estilo del logotipo*/
+    .logo img{
+        height: 40px;
+        width: 40px;
+        object-fit: contain;
+    }
+
+    /*estilos para el nombre del sitio*/
+    .logo span{
+        color:white;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+      /*estilo de contenedor de los links*/
+.nav-links{
+    display: flex;
+}
+
+/*estilos de cada uno de los links*/
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/*Estilos para que los links cambien de color*/
+.nav-link::after{
+      content:'';
+      position: absolute;
+       width: 0%;
+       height: 3px;
+       bottom: -5px;
+       left: 0;
+       background-color: #ff4b2b;
+       transition: width 0.3s;
+}
+
+/*Estilos cuando pasamos el cursor sobre el texto*/
+.nav-link:hover{
+color: #ff4b2b;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+/*estilo parapie de pagina*/
+footer{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Aqui esta los estilos del cuerpo de la pagina*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*aqui van los diseños de la barra de navegacion*/
+nav{
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*estilos del logotipo*/
+.logo img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+/*Estilos para el nombre del sitio*/
+.logo span{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
+/*Estilos del contenedor de los links*/
+.nav-links{
+    display: flex;
+}
+
+/*Estilos de cada uno de los links*/
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/*Estilos para que los links cambien de color*/
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff4b2b;
+    transition: width 0.3s;
+}
+
+/*Estilos cuando pasamos el curso sobre el texto*/
+.nav-link:hover{
+    color:#ff4b2b;
+
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+/*Aqui inician los estilos de la bienvenida*/
+.bienvenida{
+	display: flex;
+}
+
+.bienvenida-1 {
+ background-image: url(img/LOGOCRIS.png);
+ background-position: center center;
+ background-repeat : no-repeat;
+ background-size: cover;
+ width: 40%;
+}
+
+.bienvenida-2{
+	width: 60%;
+	padding: 150px 250px 150px 100px;
+	background-color: #191919;
+}
+
+h2{
+	color: #fff;
+	font-size: 90px;
+	line-height: 100px;
+	text-transform: uppercase;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	margin-bottom: 20px;
+}
+
+.b1{
+	color: #ff4b2b;
+}
+
+p{
+	color: #afafaf;
+	font-size: 16px;
+	margin: 25px 0;
+}
+
+.btn{
+    text-decoration: none;
+    display:inline-block;
+    background-color: #a82e37;
+    padding: 11px 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue",sans-serif;
+    margin: 25px 0;
+    border: 0;
+    color: #fff;
+}
+
+.btn:hover{
+	background-color: #c7252d;
+}
+
+
+/*Aqui finalizan los estilos de la bienvenida*/
+
+/*Aqui inicia los estilos de la galeria*/
+.galeria-section{
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.galeria-section h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #a71f08;
+}
+
+.descripcion{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+/*Aqui finaliza los estilos de la galeria*/
+
+/*aqui inician los estilos de la seccion jefes*/
+.form-ayuda¨{
+    display: flex;
+}
+
+.div-form{
+    width: 50%;
+    padding: 150px 250px 150px 100px;
+    background-color: f0f0f0;
+}
+
+.formulario-ayuda{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur (18px);
+    max-width: 500px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rjb (0,0,0,0.3);
+}
+
+.formulario-ayuda img{
+    width: 100px;
+    margin: 0 auto 20px auto;
+    display: block;
+
+}
+
+.formulario-ayuda h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #a71f08;
+    font-size: 1.6em;
+}
+
+.formulario-ayuda label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-ayuda input[type=text],
+.formulario-ayuda input[type=email],
+.formulario-ayuda textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+
+}
+
+.formulario-ayuda input::placeholder,
+.formulario-ayuda textarea::placeholder{
+    color: #888;
+    font-style: italic;
+    opacity: 1;
+    font-size: 14px;
+}
+
+.formulario-ayuda textarea{
+    height: 100px;
+    resize: vertical;
+}
+
+.formulario-ayuda button{
+    margin-top: 20px;
+    width: 100;
+    padding: 10px;
+    background-color: #cf2d3a;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-ayuda button:hover{
+    background-color: #e5303f;
+}
+
+.imagenform{
+    background-image:url(img/descarga\ \(4\).jpg) ;
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+}
+
+/*Aqui inician los estilos de la seccion jefes*/
+.personal{
+    background-color: #191919;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.personal-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+hr{
+    border: 1px solid #cf2d3a;
+    width: 90px;
+}
+
+.personal-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.personal-1{
+    text-align: center;
+}
+
+.personal-1 img{
+    width: 250px;
+    border-radius: 15px;
+
+/*aqui finalizan los estilos del formulario*/
+.personal{
+    background-color: #191919;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.personal-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+hr{
+    border: 1px solid #cf2d3a;
+    width: 90px;
+
+}
+
+.personal-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+
+.personal-1{
+    text-align: center;
+
+}
+
+.personal-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25;
+
+}
+
+.personal-1 h3{
+    font-size: 22px;
+    color:#ff4b2b;
+
+}
+
+.personal-1 p{
+    padding: 0 50px;
+
+}
+
+.personal-1 a{
+    color: #cf2d3a;
+    text-decoration: none;
+}
+/*aqui terninan los estilos de la seccion jefes*/
+
+/*Estilos para el pie de pagina*/
+footer{
+	background-color: #111; 
+	color: white;
+	text-align: center;
+	padding: 20px 10px;
+	margin-top: auto;
+}
+
